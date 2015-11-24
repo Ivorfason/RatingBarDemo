@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/aci_point_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="请为您的售后—小小月本周工作表现打分："/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:text="服务态度" />
+        <RatingBar
+            android:id="@+id/aci_point1_rb"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="70dp"
+            android:stepSize = "1.0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:text="响应速度" />
+        <RatingBar
+            style="@style/roomRatingBar"
+            android:id="@+id/aci_point2_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="120dp"
+            android:stepSize = "1.0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="170dp"
+            android:text="上门态度" />
+        <RatingBar
+            style="@style/roomRatingBar"
+            android:id="@+id/aci_point3_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="170dp"
+            android:stepSize = "1.0"/>
+        <EditText
+            android:id="@+id/aci_point_et"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="220dp"
+            android:hint="写下您的其他建议" />
+        <Button
+            android:id="@+id/aci_point_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aci_point_et"
+            android:layout_centerHorizontal="true"
+            android:text="提交" />
+
+    </RelativeLayout>
+</ScrollView>
